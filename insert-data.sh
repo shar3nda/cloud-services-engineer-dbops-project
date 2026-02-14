@@ -24,12 +24,12 @@ echo "CREATE TABLE orders_date(order_id bigint not null, status varchar(255), da
 echo "CREATE TABLE order_product(quantity integer not null, order_id bigint not null, product_id bigint not null);" >> init.sql
 
 # Заполним таблицы
-echo "INSERT INTO product (id, name, picture_url) VALUES (1, 'Сливочная', 'https://res.cloudinary.com/sugrobov/image/upload/v1623323635/repos/sausages/6.jpg');" >> init.sql
-echo "INSERT INTO product (id, name, picture_url) VALUES (2, 'Особая', 'https://res.cloudinary.com/sugrobov/image/upload/v1623323635/repos/sausages/5.jpg');" >> init.sql
-echo "INSERT INTO product (id, name, picture_url) VALUES (3, 'Молочная', 'https://res.cloudinary.com/sugrobov/image/upload/v1623323635/repos/sausages/4.jpg');" >> init.sql
-echo "INSERT INTO product (id, name, picture_url) VALUES (4, 'Нюренбергская', 'https://res.cloudinary.com/sugrobov/image/upload/v1623323635/repos/sausages/3.jpg');" >> init.sql
-echo "INSERT INTO product (id, name, picture_url) VALUES (5, 'Мюнхенская', 'https://res.cloudinary.com/sugrobov/image/upload/v1623323635/repos/sausages/2.jpg');" >> init.sql
-echo "INSERT INTO product (id, name, picture_url) VALUES (6, 'Русская', 'https://res.cloudinary.com/sugrobov/image/upload/v1623323635/repos/sausages/1.jpg');" >> init.sql
+echo "INSERT INTO product (id, name, picture_url) VALUES (1, 'Сливочная', 'https://res.cloudinary.com/sugrobov/image/upload/v1623323635/repos/sausages/6.jpg', 320.00);" >> init.sql
+echo "INSERT INTO product (id, name, picture_url) VALUES (2, 'Особая', 'https://res.cloudinary.com/sugrobov/image/upload/v1623323635/repos/sausages/5.jpg', 179.00);" >> init.sql
+echo "INSERT INTO product (id, name, picture_url) VALUES (3, 'Молочная', 'https://res.cloudinary.com/sugrobov/image/upload/v1623323635/repos/sausages/4.jpg', 225.00);" >> init.sql
+echo "INSERT INTO product (id, name, picture_url) VALUES (4, 'Нюренбергская', 'https://res.cloudinary.com/sugrobov/image/upload/v1623323635/repos/sausages/3.jpg', 315.00);" >> init.sql
+echo "INSERT INTO product (id, name, picture_url) VALUES (5, 'Мюнхенская', 'https://res.cloudinary.com/sugrobov/image/upload/v1623323635/repos/sausages/2.jpg', 330.00);" >> init.sql
+echo "INSERT INTO product (id, name, picture_url) VALUES (6, 'Русская', 'https://res.cloudinary.com/sugrobov/image/upload/v1623323635/repos/sausages/1.jpg', 189.00);" >> init.sql
 
 
 echo "INSERT INTO product_info (product_id, name, price) VALUES (1, 'Сливочная', 320.00);" >> init.sql
